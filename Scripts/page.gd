@@ -141,3 +141,4 @@ func _on_body_exited(body: Node2D) -> void:
 		Global.page_col = false
 		Global.page_id = 0
 		print ("bye page :3")
+		DialogueManager.stop_dialogue()

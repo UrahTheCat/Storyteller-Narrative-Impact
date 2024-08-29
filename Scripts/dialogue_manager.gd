@@ -47,3 +47,9 @@ func _unhandled_input(event: InputEvent) -> void:
 			return
 			
 		_show_textbox()
+		
+func stop_dialogue():
+	is_dialogue_active = false
+	current_line_index = 0
+	textbox.queue_free()
+	return

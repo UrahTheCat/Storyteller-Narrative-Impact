@@ -93,7 +93,7 @@ func _on_jump_buffer_timer_timeout() -> void:
 func interaction_handling():
 	var interacted = Input.is_action_just_pressed("interact")
 	if Global.button_col: 
-		if interacted && DialogueManager.is_dialogue_active == false:
+		if interacted:
 			Global.button_interaction_send = true
 			print("interacted")
 			print("button id: ", Global.door_activation_number)
