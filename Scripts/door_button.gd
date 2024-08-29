@@ -10,7 +10,7 @@ func _process(delta: float) -> void:
 		print("DAN", Global.door_activation_number)
 		Global.door_activate = true
 		Global.button_interaction_send = false
-		audio_stream_player_2d.play()
+		#audio_stream_player_2d.play()
 	
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
