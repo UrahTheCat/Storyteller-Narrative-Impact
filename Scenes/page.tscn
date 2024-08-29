@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxssutqf3fg02"]
+
+[ext_resource type="Script" path="res://Scripts/page.gd" id="1_ams4e"]
+[ext_resource type="Texture2D" uid="uid://dwmecjdieee03" path="res://Assets/TR_Spr_Page.png" id="1_v7hdx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qdubv"]
+size = Vector2(32, 24)
+
+[node name="Page" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_ams4e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v7hdx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_qdubv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

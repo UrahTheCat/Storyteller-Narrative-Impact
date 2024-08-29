@@ -1,0 +1,6 @@
+TODO:
+	
+	- Add object interaction
+	- Make levels
+	- Make no story character
+	- Make tilesets for both

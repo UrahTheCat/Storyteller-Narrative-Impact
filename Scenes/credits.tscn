@@ -1,0 +1,155 @@
+[gd_scene load_steps=4 format=3 uid="uid://drrs45nx3t11v"]
+
+[ext_resource type="Script" path="res://Scripts/credits.gd" id="1_d7wmm"]
+[ext_resource type="Theme" uid="uid://g26m7grwk6eo" path="res://Assets/Themes/Buttons.tres" id="1_p1jxg"]
+[ext_resource type="FontFile" uid="uid://di7jsgrwv55ey" path="res://Assets/Fonts/mai10.ttf" id="2_neitp"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d7wmm")
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -40.0
+offset_right = 56.0
+offset_bottom = -8.0
+grow_vertical = 0
+theme = ExtResource("1_p1jxg")
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "Back"
+flat = true
+
+[node name="SFX title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 192.0
+offset_bottom = 28.0
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "Sound effects credit:
+"
+
+[node name="SFX credit" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 24.0
+offset_right = 522.0
+offset_bottom = 237.0
+scale = Vector2(0.3, 0.3)
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "wind woosh: 
+    https://opengameart.org/content/wind-whoosh-loop
+
+vgmenuhighlight: 
+    https://opengameart.org/content/8bit-menu-highlight
+
+air_move: 
+    https://opengameart.org/content/air-woosh-move"
+
+[node name="Playtersters title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 4.0
+offset_right = 302.0
+offset_bottom = 28.0
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "Playtesters:
+"
+
+[node name="Playtesters credit" type="Label" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 24.0
+offset_right = 392.0
+offset_bottom = 531.0
+scale = Vector2(0.3, 0.3)
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA"
+
+[node name="Playtesters credit2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 24.0
+offset_right = 456.0
+offset_bottom = 531.0
+scale = Vector2(0.3, 0.3)
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA
+TBA"
+
+[node name="Special thanks title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 96.0
+offset_right = 192.0
+offset_bottom = 120.0
+scale = Vector2(0.7, 0.7)
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "Special thanks to:
+"
+
+[node name="Special thanks credits" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 116.0
+offset_right = 181.0
+offset_bottom = 209.0
+scale = Vector2(0.3, 0.3)
+theme_override_fonts/font = ExtResource("2_neitp")
+theme_override_font_sizes/font_size = 10
+text = "Leo_Sketch"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

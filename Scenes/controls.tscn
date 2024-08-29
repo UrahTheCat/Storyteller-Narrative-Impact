@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5j6a3xqt3rjr"]
+
+[ext_resource type="Texture2D" uid="uid://dfakffkde5fj6" path="res://Assets/TR_Spr_Controls.png" id="1_1q6vb"]
+
+[node name="Controls" type="Sprite2D"]
+modulate = Color(1, 1, 1, 0.501961)
+texture = ExtResource("1_1q6vb")
+hframes = 5
