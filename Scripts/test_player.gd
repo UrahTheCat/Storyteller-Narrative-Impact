@@ -58,10 +58,11 @@ func jump_handling(input: float, dash_spd :float) -> void:
 			velocity.y = Jump_strength / 2;
 		if Input.is_action_just_pressed("dash"):
 			dashing = true;
-			dash_sfx.play()
+			
 		
 		if input and dashing and can_dash and coyote_jump_timer.time_left <= 0.0: 
 			velocity.x = input * dash_spd;
+			dash_sfx.play()
 			can_dash = false;
 		
 	if Input.is_action_just_pressed("jump"):
