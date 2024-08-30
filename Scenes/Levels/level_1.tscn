@@ -423,6 +423,7 @@ position = Vector2(504, 7400)
 button_number = 19
 
 [node name="Player" parent="." instance=ExtResource("3_en1n1")]
+z_index = 100
 position = Vector2(-404, -568)
 metadata/_edit_group_ = true
 
@@ -433,6 +434,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("4_wlhj2")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(0, -16)
 limit_left = 50
 limit_smoothed = true
 
