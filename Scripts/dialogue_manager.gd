@@ -51,5 +51,6 @@ func _unhandled_input(event: InputEvent) -> void:
 func stop_dialogue():
 	is_dialogue_active = false
 	current_line_index = 0
-	textbox.queue_free()
+	if is_instance_valid(textbox):
+		textbox.queue_free()
 	return
