@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://lnnasrvkgrka"]
+[gd_scene load_steps=5 format=3 uid="uid://lnnasrvkgrka"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_i0fq1"]
 [ext_resource type="FontFile" uid="uid://di7jsgrwv55ey" path="res://Assets/Fonts/mai10.ttf" id="1_s5uyf"]
 [ext_resource type="Theme" uid="uid://g26m7grwk6eo" path="res://Assets/Themes/Buttons.tres" id="2_rbu5m"]
+[ext_resource type="Texture2D" uid="uid://batoukajy6v44" path="res://Assets/TR_Spr-Version.png" id="4_loh02"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -59,6 +60,12 @@ theme_override_fonts/font = ExtResource("1_s5uyf")
 theme_override_font_sizes/font_size = 10
 text = "Quit"
 flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(308, 168)
+texture = ExtResource("4_loh02")
+hframes = 3
 
 [connection signal="pressed" from="HBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="HBoxContainer/Start" to="." method="_on_start_pressed"]

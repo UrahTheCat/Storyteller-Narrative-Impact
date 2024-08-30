@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2fund31ln3gv"]
+
+[ext_resource type="Script" path="res://Scripts/level_no_story.gd" id="1_cy3og"]
+[ext_resource type="Texture2D" uid="uid://brqhbk7p7teb3" path="res://Assets/NS-Spr-Tiles.png" id="1_tqhy0"]
+[ext_resource type="PackedScene" uid="uid://djv1y8yepkcie" path="res://Scenes/player_ns.tscn" id="2_48y85"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gkvuv"]
+texture = ExtResource("1_tqhy0")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, 8, 0, 8, -8, -8, -8)
+1:0/0/physics_layer_0/polygon_0/one_way = true
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, 8, 0, 8, 8, -8, 8)
+2:0/0/physics_layer_0/polygon_0/one_way = true
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_qcf2l"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_gkvuv")
+
+[node name="Level no story" type="Node2D"]
+script = ExtResource("1_cy3og")
+
+[node name="Player" parent="." instance=ExtResource("2_48y85")]
+position = Vector2(136, 140)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_qcf2l")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 0, 131072, 0, 0, 589824, 0, 0, 655360, 0, 0, 524288, 0, 0, 458752, 0, 0, 393216, 0, 0, 327680, 0, 0, 262144, 0, 0, 196608, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655378, 0, 0, 655379, 0, 0, 655380, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0, 720912, 0, 0, 720913, 0, 0, 720914, 0, 0, 720915, 0, 0, 720916, 0, 0)
