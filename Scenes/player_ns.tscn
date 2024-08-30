@@ -84,7 +84,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fddx"]
-size = Vector2(12.3014, 11.742)
+size = Vector2(14.3517, 12.6453)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
@@ -96,7 +96,7 @@ sprite_frames = SubResource("SpriteFrames_fmdrr")
 animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
+position = Vector2(-2.38419e-07, -2.38419e-07)
 scale = Vector2(0.975496, 1.10713)
 shape = SubResource("RectangleShape2D_1fddx")
 

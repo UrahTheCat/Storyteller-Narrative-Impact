@@ -84,7 +84,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fddx"]
-size = Vector2(12.3014, 11.742)
+size = Vector2(14.3517, 12.6453)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
