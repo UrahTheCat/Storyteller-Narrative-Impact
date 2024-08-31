@@ -73,7 +73,7 @@ offset_left = 8.0
 offset_top = 8.0
 offset_right = 268.0
 offset_bottom = 109.0
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 8
 text = "[This is temporary]
 To play press [ctrl + shift + space], 
 then press [shift + 1 or shift + 2]

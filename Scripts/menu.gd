@@ -12,10 +12,9 @@ func _ready() -> void:
 	sprite_2d.hide()
 
 func _process(delta: float) -> void:
-	if cheats_enabled:
-		if Input.is_action_just_pressed("quit"):
+	if Input.is_action_just_pressed("quit"):
 			get_tree().quit()
-		
+	if cheats_enabled:
 		if Input.is_action_just_pressed("selection_1"):
 			game_select = 1
 			print(game_select)
