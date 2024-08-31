@@ -16,7 +16,7 @@ func _ready() -> void:
 	Global.level_4_start_pos = level_4_start.global_position
 	Global.level_5_start_pos = level_5_start.global_position
 	
-	#player.global_position = Global.level_1_start_pos
+	player.global_position = Global.level_1_start_pos
 	
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("quit"):
