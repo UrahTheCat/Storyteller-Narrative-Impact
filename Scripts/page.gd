@@ -34,9 +34,9 @@ var lines :Array = [
 		"\"That thing found me.\"",
 		"\"I tried to outrun it but it's too fast.\"",
 		"\"I somehow managed to get inside a room.\"",
-		"\"It's blast proof so hopefully I'm safe here.\"",
+		"\"It's blast proof so I don't think it can get in.\"",
 		"\"I found other people here.\"",
-		"\"Hopefully we're safe here.\""
+		"\"Hopefully we're safe.\""
 	],[ #5
 		"20XX-09-27_12-18-24:",
 		"\"I've been scavenging around the lab…\"",
