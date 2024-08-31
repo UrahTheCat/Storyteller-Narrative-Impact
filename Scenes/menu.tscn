@@ -67,6 +67,18 @@ position = Vector2(308, 168)
 texture = ExtResource("4_loh02")
 hframes = 4
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 268.0
+offset_bottom = 109.0
+theme_override_font_sizes/font_size = 10
+text = "[This is temporary]
+To play press [ctrl + shift + space], 
+then press [shift + 1 or shift + 2]
+then youll be able to play "
+
 [connection signal="pressed" from="HBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="HBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]
