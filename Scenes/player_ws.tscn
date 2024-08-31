@@ -84,7 +84,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fddx"]
-size = Vector2(14.3517, 12.6453)
+size = Vector2(14, 9)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
@@ -98,7 +98,7 @@ animation = &"run"
 frame_progress = 0.515051
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
+position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_1fddx")
 
 [node name="CoyoteJumpTimer" type="Timer" parent="."]
