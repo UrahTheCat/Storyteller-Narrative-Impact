@@ -13,6 +13,7 @@ script = ExtResource("1_ams4e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_v7hdx")
+hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)

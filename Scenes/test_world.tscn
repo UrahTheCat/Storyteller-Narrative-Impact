@@ -71,10 +71,12 @@ door_number = 1
 
 [node name="Page" parent="." instance=ExtResource("6_sx58o")]
 position = Vector2(216, 648)
+custom_color = true
 
 [node name="Page1" parent="." instance=ExtResource("6_sx58o")]
 position = Vector2(312, 648)
 page_id = 1
+custom_color = true
 
 [node name="Page2" parent="." instance=ExtResource("6_sx58o")]
 position = Vector2(440, 648)

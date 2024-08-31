@@ -65,7 +65,7 @@ flat = true
 visible = false
 position = Vector2(308, 168)
 texture = ExtResource("4_loh02")
-hframes = 3
+hframes = 4
 
 [connection signal="pressed" from="HBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="HBoxContainer/Start" to="." method="_on_start_pressed"]

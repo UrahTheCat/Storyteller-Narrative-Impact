@@ -16,7 +16,7 @@ extends CharacterBody2D
 var dashing = false;
 var can_dash = false;
 var buffered_jump = false;
-
+var facing_direction = 1
 
 var gravity: int = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -76,11 +76,13 @@ func apply_acceleration(input :float, spd :float, acc :float, delta :float) -> v
 	velocity.x = move_toward(velocity.x, spd * input, acc * delta);
 
 func animate_player(input: float) -> void:
+	if input != 0:
+		animated_sprite_2d.flip_h = (input < 0)
 	if velocity.x != 0:
-		animated_sprite_2d.flip_h = (input < 0);
 		animated_sprite_2d.play("run"); 
 	else:
 		animated_sprite_2d.play("idle");
+
 	if !is_on_floor():
 		if velocity.y < 0.0: 
 			animated_sprite_2d.play("jump");

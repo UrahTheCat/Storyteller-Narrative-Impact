@@ -219,14 +219,6 @@ button_number = 6
 
 [node name="Level 3" type="Node" parent="Doors"]
 
-[node name="Button fake 1" parent="Doors/Level 3" instance=ExtResource("10_rbt5e")]
-position = Vector2(1928, 2888)
-button_number = 99
-
-[node name="Button fake 2" parent="Doors/Level 3" instance=ExtResource("10_rbt5e")]
-position = Vector2(1896, 2888)
-button_number = 99
-
 [node name="Door 7" parent="Doors/Level 3" instance=ExtResource("9_27lqf")]
 position = Vector2(776, 3568)
 door_number = 7

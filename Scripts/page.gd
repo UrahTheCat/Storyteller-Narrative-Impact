@@ -3,6 +3,8 @@ extends Area2D
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
 @export var page_id = 0
+@export var custom_color = false
+@export var custom_color_id = 0
 var lines :Array = [
 	[ #0 (test text)
 		"hello",
@@ -134,6 +136,11 @@ var lines :Array = [
 
 var can_read = true
 
+func _ready() -> void:
+	if custom_color:
+		sprite_2d.set_frame(custom_color_id)
+	else:
+		sprite_2d.set_frame(randi_range(0,5))
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):

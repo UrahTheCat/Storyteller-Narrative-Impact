@@ -282,14 +282,6 @@ button_number = 6
 
 [node name="Level 3" type="Node" parent="Doors"]
 
-[node name="Button fake 1" parent="Doors/Level 3" instance=ExtResource("12_8fejk")]
-position = Vector2(1928, 2888)
-button_number = 99
-
-[node name="Button fake 2" parent="Doors/Level 3" instance=ExtResource("12_8fejk")]
-position = Vector2(1896, 2888)
-button_number = 99
-
 [node name="Door fake 2" parent="Doors/Level 3" instance=ExtResource("11_cvlnk")]
 position = Vector2(1424, 3054)
 rotation = 1.5708
@@ -518,6 +510,7 @@ shape = SubResource("RectangleShape2D_ebm0v")
 [node name="Page" parent="Pages/Level 2" instance=ExtResource("13_k5s26")]
 position = Vector2(632, 1256)
 page_id = 1
+custom_color = true
 
 [node name="Page2" parent="Pages/Level 2" instance=ExtResource("13_k5s26")]
 position = Vector2(1264, 824)
@@ -584,6 +577,8 @@ page_id = 15
 [node name="Page16" parent="Pages/Level 5" instance=ExtResource("13_k5s26")]
 position = Vector2(1224, 7016)
 page_id = 16
+custom_color = true
+custom_color_id = 1
 
 [node name="Controls" type="Node" parent="."]
 
