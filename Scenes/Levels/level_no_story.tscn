@@ -344,6 +344,10 @@ frame = 2
 position = Vector2(2136, -336)
 frame = 4
 
+[node name="Controls (dash)2" parent="Controls" instance=ExtResource("11_fgqrc")]
+position = Vector2(2152, -336)
+frame = 5
+
 [connection signal="body_entered" from="Level End/Level 1 end" to="." method="_on_level_1_end_body_entered"]
 [connection signal="body_entered" from="Level End/Level 2 end" to="." method="_on_level_2_end_body_entered"]
 [connection signal="body_entered" from="Level End/Level 3 end" to="." method="_on_level_3_end_body_entered"]

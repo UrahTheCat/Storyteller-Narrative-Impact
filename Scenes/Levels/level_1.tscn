@@ -597,6 +597,10 @@ frame = 2
 position = Vector2(2120, -336)
 frame = 4
 
+[node name="Controls (dash)2" parent="Controls" instance=ExtResource("14_g1i6v")]
+position = Vector2(2136, -336)
+frame = 5
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(52, 56)
 stream = ExtResource("15_rj76o")

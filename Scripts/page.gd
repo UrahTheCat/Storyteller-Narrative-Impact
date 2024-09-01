@@ -13,9 +13,9 @@ var lines :Array = [
 		"20XX-10-15_02-09-48:",
 		"\"This is my final entry.\"",
 		"\"I've been trapped in here for weeks now.\"",
-		"\"I wrote these notes hoping...\"", 
+		"\"I made these notes hoping...\"", 
 		"\"that someone would find them.\"",
-		"\"If someone is reading this…\"",
+		"\"If someone is listening to this this…\"",
 		"\"I am no longer here.\"",
 	],[ #2
 		"20XX-10-11_21-53-43:",
