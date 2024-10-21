@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://ofcal7dvauek"]
+[gd_scene load_steps=21 format=3 uid="uid://ofcal7dvauek"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_4ox50"]
 [ext_resource type="Texture2D" uid="uid://u807xkorxahs" path="res://Assets/Maps/map concepts - level 1- sml.png" id="1_nfat1"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bxssutqf3fg02" path="res://Scenes/page.tscn" id="13_k5s26"]
 [ext_resource type="PackedScene" uid="uid://c5j6a3xqt3rjr" path="res://Scenes/controls.tscn" id="14_g1i6v"]
 [ext_resource type="AudioStream" uid="uid://cebkfuky5yagv" path="res://Assets/Sounds/wind woosh loop.ogg" id="15_rj76o"]
+[ext_resource type="Texture2D" uid="uid://b8ybuwycsdmsy" path="res://Assets/Game-number.png" id="16_3ar20"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x06tu"]
 texture = ExtResource("2_e02ol")
@@ -607,6 +608,13 @@ stream = ExtResource("15_rj76o")
 volume_db = -5.0
 autoplay = true
 max_distance = 61750.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(304, 164)
+texture = ExtResource("16_3ar20")
+hframes = 2
 
 [connection signal="body_entered" from="Level End/Level 1 end" to="." method="_on_level_1_end_body_entered"]
 [connection signal="body_entered" from="Level End/Level 2 end" to="." method="_on_level_2_end_body_entered"]

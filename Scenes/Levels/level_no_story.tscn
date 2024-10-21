@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b2fund31ln3gv"]
+[gd_scene load_steps=16 format=3 uid="uid://b2fund31ln3gv"]
 
 [ext_resource type="Script" path="res://Scripts/level_no_story.gd" id="1_cy3og"]
 [ext_resource type="Texture2D" uid="uid://brqhbk7p7teb3" path="res://Assets/NS-Spr-Tiles.png" id="1_tqhy0"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://vrjbe7frvkhe" path="res://Assets/Maps/map concepts - level 3- sml.png" id="4_4mb58"]
 [ext_resource type="Texture2D" uid="uid://c6pe3vlsuihal" path="res://Assets/Maps/map concepts - level 4- sml.png" id="5_dg0ug"]
 [ext_resource type="Texture2D" uid="uid://c5b5a7ceynp6h" path="res://Assets/Maps/map concepts - level 5- sml.png" id="6_d17vy"]
+[ext_resource type="Texture2D" uid="uid://b8ybuwycsdmsy" path="res://Assets/Game-number.png" id="8_55ykg"]
 [ext_resource type="PackedScene" uid="uid://dw3lc8xj1rkv0" path="res://Scenes/door.tscn" id="9_27lqf"]
 [ext_resource type="PackedScene" uid="uid://dxfsegrmcj2b6" path="res://Scenes/door_button.tscn" id="10_rbt5e"]
 [ext_resource type="PackedScene" uid="uid://c5j6a3xqt3rjr" path="res://Scenes/controls.tscn" id="11_fgqrc"]
@@ -347,6 +348,14 @@ frame = 4
 [node name="Controls (dash)2" parent="Controls" instance=ExtResource("11_fgqrc")]
 position = Vector2(2152, -336)
 frame = 5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(304, 164)
+texture = ExtResource("8_55ykg")
+hframes = 2
+frame = 1
 
 [connection signal="body_entered" from="Level End/Level 1 end" to="." method="_on_level_1_end_body_entered"]
 [connection signal="body_entered" from="Level End/Level 2 end" to="." method="_on_level_2_end_body_entered"]
